@@ -16,7 +16,7 @@ Wykonane zadanie należy przesylac jako pull request na branch develop.
 Zwrocie uwagę na sematyke html i accessibility.  
 
 ### Grafiki
-[Project.pdf](/assets/Landingage.pdf})  
+[Project.pdf](/assets/Layout.pdf.pdf})  
 [Figma](https://www.figma.com/file/gCTf2Ux96ETR0DMxr6T2m039/LandingPage?node-id=1%3A13)  
 [Zeppelin](https://zpl.io/boKzeQv)  
 <sub> Marginesy mogą się trochę nie zgadzać dopiero się uczę figmy</sub>
