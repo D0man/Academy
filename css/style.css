@@ -1,13 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400&subset=latin-ext');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 a {
     color: #ffffff;
     text-decoration: none;
 }
+
+h1 {
+    font-weight: 100;
+}
+
 body {
     background: linear-gradient(90deg, #83EB94 0%, #47D95E 100%);
     text-align: center;
@@ -16,23 +22,31 @@ body {
     font-size: 24px;
     font-weight: 100;
 }
-header {
-    position: relative;
-    margin-bottom: 50px;
-}
+
+
 .header-image {
-    width: 50%;
+    width: 100%;
 }
-.header-heading {
-    text-transform: uppercase;
-    font-size: 60px;
-    letter-spacing: 5px;
-    font-weight: 100;
+
+.coming-soon-ribbon {
+    display: none;
 }
-.newsletter-form {
-    margin-top:20px;
-    margin-bottom: 50px;
+
+main span {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+form {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+input {
+    display: block;
+}
+
 .email-input {
     width: 250px;
     height: 48px;
@@ -42,15 +56,12 @@ header {
     font-weight: 300;
     border: none;
     text-indent: 10px;
-    margin-right: 36px;
 }
+
 .email-input:invalid {
     border: 2px solid #FF3333;
 }
-.email-input:focus {
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    outline: none;
-}
+
 .submit-button {
     background: #0297EC;
     border-radius: 9px;
@@ -62,15 +73,75 @@ header {
     font-size: 16px;
     transition: 0.3s;
     cursor: pointer;
+    margin-top: 10px;
 }
+
 .submit-button:hover {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
-.coming-soon-ribbon {
-    position: absolute;
-    right: 0;
-    top: 0;
+
+footer {
+    margin-top: 92px;
+    margin-bottom: 10px;
 }
+
+footer p {
+    font-size: 16px;
+}
+
 .heart-icon {
     margin-right: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .header-image {
+        width: 80%;
+    }
+
+    .header-heading {
+        text-transform: uppercase;
+        font-size: 60px;
+        letter-spacing: 5px;
+        font-weight: 100;
+    }
+
+    .newsletter-form {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    input {
+        display: inline;
+    }
+
+    .email-input {
+        margin-right: 36px;
+    }
+
+    .email-input:focus {
+        outline: 0;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .coming-soon-ribbon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+
+    .shp11 {
+        background: #2E3633;
+        opacity: 0.1;
+    }
+
 }
