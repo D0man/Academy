@@ -100,7 +100,7 @@ footer p {
     }
 
     .header-image {
-        width: 80%;
+        width: 50%;
     }
 
     .header-heading {
@@ -123,9 +123,10 @@ footer p {
         margin-right: 36px;
     }
 
-    .email-input:focus {
+    input.email-input:focus {
         outline: 0;
-        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border: 2px solid #5AAF65;
+        box-sizing: border-box;
     }
 
     .coming-soon-ribbon {
@@ -137,11 +138,7 @@ footer p {
 
     footer {
         margin-top: 100px;
-    }
-
-    .shp11 {
-        background: #2E3633;
-        opacity: 0.1;
+        margin-bottom: 10px;
     }
 
 }
