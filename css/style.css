@@ -47,6 +47,10 @@ header {
 .email-input:invalid {
     border: 2px solid #FF3333;
 }
+.email-input:focus {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: none;
+}
 .submit-button {
     background: #0297EC;
     border-radius: 9px;
