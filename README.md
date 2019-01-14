@@ -29,3 +29,9 @@ Wstępny czas na wykonanie challenga 21.01.2019
   
 
 Jak ktoś ma ochotę zrobić lepszy readme, to niech to zrobi :D
+
+
+---
+EDITED
+---
+Dodałem sobie Parcel'a, bo nie chce mi się pisac czystych CSS'ow. Ale w repo leza tez wygenerowane dist ;)
