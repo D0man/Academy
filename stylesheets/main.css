@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container__coming-soon{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.container__coming-soon figure{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(90deg, #83EB94 0%, #47D95E 100%);
+    color: white;
+
+    font-family: 'Lato';
+    line-height: normal;
+    text-align: center;
+    mix-blend-mode: normal;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header h1{
+    font-weight: 300;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.header figure{
+    /* width: 100vw; */
+    object-fit: cover;
+}
+
+.header img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.main h2{
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.main__form__input-email{
+    border-radius: 9px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-weight: 300;
+    font-size: 16px;
+    text-indent: 10px;
+    color: #A0A0A0;
+
+    width: 250px;
+    height: 48px;
+    margin-right: 50px;
+}
+
+.main__form__submit{
+    background: #0297EC;
+    border-radius: 9px;
+
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    border-color: transparent;
+
+    color: #FFFFFF;
+    width: 250px;
+    height: 48px;
+}
+
+.footer{
+    text-align: center;
+    font-size: 24px;
+}

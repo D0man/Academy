@@ -1,0 +1,6 @@
+@media all and (max-width: 1000px){
+    .footer{
+        position: absolute;
+        bottom: 0;
+    }
+}
