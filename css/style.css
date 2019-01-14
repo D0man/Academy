@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&subset=latin-ext');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+body {
+    background: linear-gradient(90deg, #83EB94 0%, #47D95E 100%);
+    text-align: center;
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+}
+header {
+    position: relative;
+    margin-bottom: 50px;
+}
+.header-image {
+    width: 50%;
+}
+.header-heading {
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+.newsletter-form {
+    margin-top:20px;
+    margin-bottom: 50px;
+}
+.email-input {
+    width: 250px;
+    height: 48px;
+    border-radius: 9px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #A0A0A0;
+    font-weight: 300;
+    border: none;
+    text-indent: 10px;
+    margin-right: 36px;
+}
+.email-input:invalid {
+    border: 2px solid #FF3333;
+}
+.submit-button {
+    background: #0297EC;
+    border-radius: 9px;
+    border: none;
+    width: 250px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 14.5px;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.submit-button:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.coming-soon-ribbon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.heart-icon {
+    margin-right: 5px;
+}
