@@ -45,6 +45,7 @@ body {
     width: 240px;
     padding: 15px 0px 15px 10px;
     border: none;
+    font-family: Lato;
 }
 .emailForm__input::placeholder {
     font-weight: 300;
@@ -52,6 +53,27 @@ body {
     font-size: 16px;
     line-height: normal;
 }
+.emailForm__input:focus {
+    outline: none;
+    border: 2px solid #5AAF65;
+    border-style: inset;
+    width: 240px;
+    margin-top: 13px;
+    margin-bottom: -21px;
+}
+#focusbar {
+    font-size: 16px;
+    color: white;
+    align-self: flex-start;
+    position: relative;
+    bottom: 52px;
+    left: 2px;
+    display: none;
+}
+.emailForm__input:focus + #focusbar {
+    display: block;
+}
+
 .emailForm__button {
     background-color: #0297EC;
     border-radius: 9px;
