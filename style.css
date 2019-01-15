@@ -29,7 +29,7 @@ body {
     letter-spacing: 5px;
 }
 .header__ribbon {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     display: none;
@@ -59,10 +59,9 @@ body {
     font-size: 16px;
     line-height: normal;
 }
-.emailForm__input:focus {
+.emailForm__input:valid {
     outline: none;
-    border: 2px solid #5AAF65;
-    border-style: inset;
+    border: 2px inset #5AAF65;
     width: 240px;
     margin-top: 13px;
     margin-bottom: -21px;
@@ -76,16 +75,28 @@ body {
     left: 2px;
     display: none;
 }
-.emailForm__input:focus + #focusbar {
+.emailForm__input:valid ~ #focusbar {
     display: block;
 }
-/*.emailForm__input:focus:invalid {
+.emailForm__input:focus:invalid {
     outline: none;
-    border: 2px solid #FF3333;
-    border-style: inset;
+    border: 2px inset #FF3333;
     width: 240px;
     margin-top: 13px;
-}*/
+    margin-bottom: -21px;
+}
+#errorbar {
+    font-size: 16px;
+    color: #FF3333;
+    align-self: flex-start;
+    position: relative;
+    bottom: 52px;
+    left: 2px;
+    display: none;
+}
+.emailForm__input:focus:invalid ~ #errorbar {
+    display: block;
+}
 .emailForm__button {
     background-color: #0297EC;
     border-radius: 9px;
@@ -104,10 +115,6 @@ body {
     font-size: 16px;
     color: white;
     text-transform: uppercase;
-}
-.emailForm__button:hover {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    bottom: 5px;
 }
 .footer {
     height: 150px;
@@ -155,10 +162,9 @@ body {
         margin-right: 28px;
         padding: 17px 0 16px 10px;
     }
-    .emailForm__input:focus {
+    .emailForm__input:valid {
         outline: none;
-        border: 2px solid #5AAF65;
-        border-style: inset;
+        border: 2px inset #5AAF65;
         width: 240px;
         margin-top: -4px;
         margin-right: -22px;
@@ -173,7 +179,27 @@ body {
         bottom: 7px;
         left: -227px;
     }
-
+    .emailForm__input:focus:invalid {
+        outline: none;
+        border: 2px inset #FF3333;
+        width: 240px;
+        margin-top: -4px;
+        margin-right: -68px;
+        padding-top: 15px;
+        padding-left: 8px;
+    }
+    #errorbar {
+        font-size: 16px;
+        color: #FF3333;
+        align-self: flex-start;
+        position: relative;
+        bottom: 7px;
+        left: -180px;
+    }
+    .emailForm__button:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        bottom: 5px;
+    }
     .footer {
         margin-top: 287px;
     }
