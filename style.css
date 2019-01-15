@@ -28,6 +28,12 @@ body {
     color: white;
     letter-spacing: 5px;
 }
+.header__ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
 .emailForm {
     display: flex;
     flex-direction: column;
@@ -40,10 +46,10 @@ body {
 }
 .emailForm__input {
     margin-top: 15px;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
     width: 240px;
-    padding: 15px 0px 15px 10px;
+    padding: 15px 0 15px 10px;
     border: none;
     font-family: Lato;
 }
@@ -73,17 +79,23 @@ body {
 .emailForm__input:focus + #focusbar {
     display: block;
 }
-
+/*.emailForm__input:focus:invalid {
+    outline: none;
+    border: 2px solid #FF3333;
+    border-style: inset;
+    width: 240px;
+    margin-top: 13px;
+}*/
 .emailForm__button {
     background-color: #0297EC;
     border-radius: 9px;
     border: none;
     width: 250px;
-    padding: 15px 0px;
+    padding: 15px 0;
     margin-top: 17px;
     box-shadow: none;
     position: relative;
-    bottom: 0px;
+    bottom: 0;
     transition: 0.3s;
 }
 .emailForm__button__text {
@@ -94,7 +106,7 @@ body {
     text-transform: uppercase;
 }
 .emailForm__button:hover {
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     bottom: 5px;
 }
 .footer {
@@ -117,4 +129,56 @@ body {
 }
 .footer__line__heart {
     color: #0297EC;
+}
+
+@media all and (min-width: 768px) {
+    body {
+        background: linear-gradient(90deg, #83EB94 0%, #47D95E 100%);
+    }
+    .header__caption {
+        font-size: 60px;
+    }
+    .header__ribbon {
+        display: block;
+    }
+    .emailForm {
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .emailForm__title {
+        flex: 1 100%;
+        text-align: center;
+        font-size: 24px;
+    }
+    .emailForm__input {
+        margin-right: 28px;
+        padding: 17px 0 16px 10px;
+    }
+    .emailForm__input:focus {
+        outline: none;
+        border: 2px solid #5AAF65;
+        border-style: inset;
+        width: 240px;
+        margin-top: -4px;
+        margin-right: -22px;
+        padding-top: 15px;
+        padding-left: 8px;
+    }
+    #focusbar {
+        font-size: 16px;
+        color: white;
+        align-self: flex-start;
+        position: relative;
+        bottom: 7px;
+        left: -227px;
+    }
+
+    .footer {
+        margin-top: 287px;
+    }
+    .footer__line {
+        font-size: 24px;
+        line-height: 28px;
+    }
 }
