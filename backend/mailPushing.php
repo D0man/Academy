@@ -1,5 +1,7 @@
 <?php
 
+    session_start();
+
     class DataBase{
         private $db;
         private $config = [
@@ -24,8 +26,18 @@
             $insert->bindValue(':mail', $mail, PDO::PARAM_STR);
             // właściwe wykonanie
             $insert->execute();
+            header("Location: ../");
         }
+
+        public function checkMail($mail){
+            $checkPreg = '/^[a-zA-Z0-9.\-_]+@[a-zA-Z0-9\-.]+\.[a-zA-Z]$/';
+            if(!preg_match($checkPreg, $mail)){
+                $_SESSION['error'] = 'Invalid E-mail';
+                header("Location: ../");
+            }
+            else $this->pushEmail(trim($mail));
     }
+}
 
     $mailPush = new DataBase();
-    $mailPush->pushEmail($_POST['mail']);
+    $mailPush->checkMail($_POST['mail']);
