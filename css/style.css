@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     background: linear-gradient(180deg, #83EB94 0%, #47D95E 100%);
     background-attachment: fixed;
 }
 
-.wrapper {
+body {
     position: relative;
     width: 320px;
     height: 568px;
@@ -18,7 +18,7 @@ body {
 
 /* large-screen */
 @media (min-width: 768px) {
-    .wrapper {
+    body {
         position: relative;
         width: 768px;
         height: 1024px;
@@ -201,6 +201,7 @@ input {
     top: 2.04%;
     bottom: 2.04%;
     width: 250px;
+    height: 48px;
 
     font-family: Lato;
     font-style: normal;
