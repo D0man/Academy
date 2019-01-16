@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+body {
+    background: linear-gradient(90deg, #83EB94 0%, #47D95E 100%);
+    text-align: center;
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    height: 100vh;
+}
+
+.header-image {
+    width: 100%;
+}
+
+.coming-soon-ribbon {
+    display: none;
+}
+
+main span {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+input {
+    display: block;
+}
+
+.email-input {
+    width: 250px;
+    height: 48px;
+    border-radius: 9px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #A0A0A0;
+    font-weight: 300;
+    border: none;
+    text-indent: 10px;
+}
+
+.email-input:invalid {
+    border: 2px solid #FF3333;
+}
+
+.submit-button {
+    background: #0297EC;
+    border-radius: 9px;
+    border: none;
+    width: 250px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 14.5px;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    margin-top: 92px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.heart-icon {
+    margin-right: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .header-image {
+        width: 50%;
+    }
+
+    .header-heading {
+        text-transform: uppercase;
+        font-size: 60px;
+        letter-spacing: 5px;
+        font-weight: 100;
+    }
+
+    .newsletter-form {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    input {
+        display: inline;
+    }
+
+    .email-input {
+        margin-right: 36px;
+    }
+
+    input.email-input:focus {
+        outline: 0;
+        border: 2px solid #5AAF65;
+    }
+
+    .coming-soon-ribbon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    footer {
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+}
