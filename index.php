@@ -49,7 +49,6 @@
                     <p>MK&copy; 2019.</p>
                     <p>Made with <img src="assets/love.png" alt="love"> in Poland</p>
                     <p>We are using cookies to improve your experience.</p>
-                    <p></p>
                 </footer>
     </div>
 </body>
