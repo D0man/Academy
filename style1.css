@@ -1,0 +1,115 @@
+/* Tablet+ */
+
+body {position: relative;
+width: 768px;
+height: 1024px;
+
+background: linear-gradient(90deg, #83EB94 0%, #47D95E 100%);
+}
+
+/* coming-soon-ribbon */
+.coming-soon {position: absolute;
+left: 83.85%;
+right: 0%;
+top: 0.1%;
+bottom: 81.45%;
+float: right;
+background: url(coming-soon-ribbon.png);}
+
+/* Header */
+
+.undraw_developer_activity_bv83 {
+left: 5.31%;
+right: 5.31%;
+top: -294%;
+bottom: 86%;
+}
+
+h1 {
+position: relative;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+font-size: 60px;
+text-align: center;
+letter-spacing: 5px;
+
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+}
+
+/* Form */
+
+
+
+/* Button */
+button {
+    cursor: pointer;
+}
+
+
+
+/* Rectangle */
+
+
+
+
+/* GET EARLY ACCESS */
+
+
+
+
+
+/* Input-email */
+
+
+
+
+/* Rectangle */
+
+
+
+/* E-mail */
+
+
+/* Form Title */
+
+
+/* Footer */
+footer {
+left: 0.52%;
+right: -0.52%;
+top: 84.96%;
+bottom: 0.39%;
+clear: both;
+}
+
+
+/* Rectangle */
+
+
+/* User © 2019. */
+
+
+
+
+/* Made with in Poland */
+
+
+
+/* We're using cookies to improve your experience. */
+
+
+/* love */
+
+
+
+/* coming-soon-ribbon */
+
