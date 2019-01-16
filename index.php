@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,10 +25,12 @@
                 </header>
                 <main class="main">
                     <section class="main__form">
-                        <h2>Leave your email</h2>
+                        <h2>Leave your email here</h2>
                         <form action="backend/mailPushing.php" method="post">
-                            <label for="mail"></label>
-                            <input class="main__form__input-email" type="email" name="mail" id="LandingEmail" placeholder="email@example.com">
+                            <div class="main__form--flex-column">
+                                <label for="mail"><?php if(isset($_SESSION['error'])) echo $_SESSION['error']; ?></label>
+                                <input class="main__form__input <?php if(isset($_SESSION['error'])) echo "main__form__input--error" ?>" type="email" name="mail" id="LandingEmail" placeholder="email@example.com">
+                            </div>
                             <input class="main__form__submit" type="submit" value="GET EARLY ACCESS">
                         </form>
                     </section>
