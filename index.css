@@ -1,14 +1,14 @@
 body {
     margin: 0px;
     color: whitesmoke;
-    font-family: Lato;
-    height: 100vh;
+    font-family: Lato, 'Courier New', Courier, monospace;
+    min-height: 100%;
 }
 
 .container {
-    /* height: 200vh; */
     text-align: center;
     background-image: linear-gradient(lightgreen 15%, green);
+    min-height: 100%;
 }
 
 .svg-section {
@@ -89,9 +89,8 @@ h3 {
     .footnote {
         font-size: 0.8rem;
         margin-bottom: 0px;
-        line-height: 80%;
+        line-height: 60%;
         margin-top: auto;
-        margin-bottom: 0px;
     }
     .ribbon {
         display: none;
