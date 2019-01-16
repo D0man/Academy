@@ -33,6 +33,7 @@
             $checkPreg = '/^[a-zA-Z0-9.\-_]+@[a-zA-Z0-9\-.]+\.[a-zA-Z]$/';
             if(!preg_match($checkPreg, $mail)){
                 $_SESSION['error'] = 'Invalid E-mail';
+                $_SESSION['mail'] = $mail;
                 header("Location: ../");
             }
             else $this->pushEmail(trim($mail));

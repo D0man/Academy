@@ -1,5 +1,9 @@
 <?php
     session_start();
+    if(isset($_SESSION['error'])){
+        $invalidEmail = ['errorMessage' => 'Invalid Email', 'errorClass' => 'main__form__input--error', 'typedEmail' => $_SESSION['mail']];
+    }
+    session_destroy();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,8 +32,14 @@
                         <h2>Leave your email here</h2>
                         <form action="backend/mailPushing.php" method="post">
                             <div class="main__form--flex-column">
-                                <label for="mail"><?php if(isset($_SESSION['error'])) echo $_SESSION['error']; ?></label>
-                                <input class="main__form__input <?php if(isset($_SESSION['error'])) echo "main__form__input--error" ?>" type="email" name="mail" id="LandingEmail" placeholder="email@example.com">
+                                <label for="mail"><?php if(isset($invalidEmail)) echo $invalidEmail['errorMessage'] ?></label>
+                                <input
+                                class="main__form__input <?php if(isset($invalidEmail)) echo $invalidEmail['errorClass']; ?>"
+                                value="<?php if(isset($invalidEmail)) echo $invalidEmail['typedEmail']; ?>"
+                                type="email"
+                                name="mail"
+                                id="LandingEmail"
+                                placeholder="email@example.com">
                             </div>
                             <input class="main__form__submit" type="submit" value="GET EARLY ACCESS">
                         </form>
