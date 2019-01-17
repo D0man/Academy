@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "git@github.com:mzastue/Academy.git",
   "author": "hello@mateuszlittwin.pl",
-  "license" : "MIT",
+  "license": "MIT",
   "scripts": {
     "parcel:dev": "parcel index.html",
     "parcel:prod": "parcel build index.html --no-minify --public-dir ./"
@@ -13,6 +13,7 @@
     "parcel-bundler": "^1.11.0"
   },
   "dependencies": {
+    "dotenv": "^6.2.0",
     "sass": "^1.16.0"
   }
 }
