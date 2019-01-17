@@ -1,21 +1,21 @@
 @media all and (max-width: 500px){
 
-    .container__coming-soon{
+    .coming-soon{
         display: none;
     }
 
-    .header h1{
+    .header__title{
         font-size: 30px;
     }
 
-    .main__form form{
+    .form{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .main__form__input{
+    .form__input{
         margin: 0;
         margin-bottom: 10px;
     }
@@ -26,7 +26,7 @@
 }
 
 @media all and (max-height: 500px){
-    .header figure{
+    .header__logo{
         display: none;
     }
 }

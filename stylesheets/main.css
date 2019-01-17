@@ -2,7 +2,7 @@
 box-sizing: border-box;
 }
 
-.container{
+body{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,23 +37,18 @@ body{
     flex-direction: column;
 }
 
-.header h1{
+.header__title{
     font-weight: 100;
     font-size: 60px;
     letter-spacing: 5px;
 }
 
-.header figure{
-    /* width: 100vw; */
-    object-fit: cover;
-}
-
-.header img{
+.header__logo__inner{
     width: 100%;
     object-fit: cover;
 }
 
-.main h2{
+.main__title{
     font-weight: normal;
     font-size: 24px;
 }
@@ -129,6 +124,6 @@ body{
     font-size: 24px;
 }
 
-.footer p{
+.footer__paragraph{
     margin: 0;
 }
