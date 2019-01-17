@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <img class="header-image" src="assets/undraw_developer_activity_bv83.svg" alt="Developer image">
@@ -18,7 +16,10 @@
     <main>
         <span>Leave your email</span>
         <form class="newsletter-form" action="/saveemail" method="POST">
-            <input id="email" name="email" class="email-input" type="email" placeholder="E-mail">
+            <label for="email">
+            <input id="email" name="email" class="email-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" type="email" placeholder="E-mail" aria-labelledby="email">
+            <span class="invalid-message">Invalid E-mail</span>
+            <span class="focus-message">E-mail</span></label>
             <input id="LandingEmail" type="submit" class="submit-button" value="Get early access">
         </form>
         <img class="coming-soon-ribbon" src="assets/coming-soon-ribbon.png" alt="Coming soon ribbon">
@@ -29,5 +30,4 @@
             We are using cookies to improve your experience.</p>
     </footer>
 </body>
-
 </html>

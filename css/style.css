@@ -4,15 +4,6 @@
     box-sizing: border-box;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-h1 {
-    font-weight: 100;
-}
-
 body {
     background: linear-gradient(90deg, #83EB94 0%, #47D95E 100%);
     text-align: center;
@@ -20,13 +11,17 @@ body {
     font-family: Lato, sans-serif;
     font-size: 24px;
     font-weight: 100;
-    height: 100vh;
 }
 
 .header-image {
     width: 100%;
 }
-
+.header-heading {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 100;
+    font-size: 30px;
+}
 .coming-soon-ribbon {
     display: none;
 }
@@ -34,12 +29,13 @@ body {
 main span {
     display: block;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 form {
     margin: 0 auto;
     display: inline-block;
+    position: relative;
 }
 
 input {
@@ -56,11 +52,38 @@ input {
     border: none;
     text-indent: 10px;
 }
-
+.focus-message {
+    position: absolute;
+    top: -32px;
+    font-size: 16px;
+    display: none;
+}
 .email-input:invalid {
     border: 2px solid #FF3333;
 }
-
+.invalid-message {
+    text-align: left;
+    color: #ff0000;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: absolute;
+    top: -32px;
+    display: none;
+}
+.email-input:focus ~ .focus-message {
+    display: block;
+}
+.email-input:focus:invalid ~ .focus-message {
+    display: none;
+}
+.email-input:invalid ~ .invalid-message {
+    display: block;
+}
+input.email-input:focus {
+    outline: 0;
+    border: 2px solid #5AAF65;
+}
 .submit-button {
     background: #0297EC;
     border-radius: 9px;
@@ -100,12 +123,8 @@ footer {
     }
 
     .header-heading {
-        text-transform: uppercase;
         font-size: 60px;
-        letter-spacing: 5px;
-        font-weight: 100;
     }
-
     .newsletter-form {
         margin-top: 20px;
         margin-bottom: 50px;
@@ -117,11 +136,6 @@ footer {
 
     .email-input {
         margin-right: 36px;
-    }
-
-    input.email-input:focus {
-        outline: 0;
-        border: 2px solid #5AAF65;
     }
 
     .coming-soon-ribbon {
