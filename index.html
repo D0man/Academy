@@ -11,37 +11,35 @@
 </head>
 <body>
     <div class="container">
-            <figure class="coming-soon"><img src="assets/coming-soon-ribbon.png" alt="Coming Soon"></figure>
-            <header class="header">
-                    <figure>
-                        <img src="assets/undraw_developer_activity_bv83.svg" alt="Programmer">
-                    </figure>
-                    <h1>CODE ACADEMY</h1>
-                </header>
-                <main class="main">
-                    <section class="main__form">
-                        <h2>Leave your email here</h2>
-                        <form action="backend/mailPushing.php" method="post">
-                            <div class="main__form--flex-column">
-                                <input
-                                class="main__form__input"
-                                type="email"
-                                name="mail"
-                                id="LandingEmail"
-                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}"
-                                placeholder="email@example.com"
-                                required>
-                                <label for="mail" class="main__form__label"></label>
-                            </div>
-                            <input class="main__form__submit" type="submit" value="GET EARLY ACCESS">
-                        </form>
-                    </section>
-                </main>
-                <footer class="footer">
-                    <p>MK&copy; 2019.</p>
-                    <p>Made with <img src="assets/love.png" alt="love"> in Poland</p>
-                    <p>We are using cookies to improve your experience.</p>
-                </footer>
+        <figure class="coming-soon"><img src="assets/coming-soon-ribbon.png" alt="Coming Soon"></figure>
+        <header class="header">
+            <figure>
+                <img src="assets/undraw_developer_activity_bv83.svg" alt="Programmer">
+            </figure>
+            <h1>CODE ACADEMY</h1>
+        </header>
+        <main class="main">
+            <h2>Leave your email here</h2>
+            <form class="main__form" action="backend/mailPushing.php" method="post">
+                <div class="main__form--email">
+                    <input
+                    class="main__form__input"
+                    type="email"
+                    name="mail"
+                    id="LandingEmail"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}"
+                    placeholder="email@example.com"
+                    required>
+                    <label for="mail" class="main__form__label"></label>
+                </div>
+                <input class="main__form__submit" type="submit" value="GET EARLY ACCESS">
+            </form>
+        </main>
+        <footer class="footer">
+            <p>MK&copy; 2019.</p>
+            <p>Made with <img src="assets/love.png" alt="love"> in Poland</p>
+            <p>We are using cookies to improve your experience.</p>
+        </footer>
     </div>
 </body>
 </html>
