@@ -39,7 +39,8 @@
                                 type="email"
                                 name="mail"
                                 id="LandingEmail"
-                                placeholder="email@example.com">
+                                placeholder="email@example.com"
+                                required>
                             </div>
                             <input class="main__form__submit" type="submit" value="GET EARLY ACCESS">
                         </form>

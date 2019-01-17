@@ -100,12 +100,12 @@ body{
     transition: 0.1s;
 }
 
-.main__form__input:focus{
-    border: 2px solid #5AAF65;
+.main__form__input:invalid{
+    border: 2px solid #FF3333;
 }
 
-.main__form__input:valid{
-    border: 2px solid #FF3333;
+.main__form__input:focus{
+    border: 2px solid #5AAF65;
 }
 
 .main__form__submit{
