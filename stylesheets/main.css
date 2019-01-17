@@ -82,7 +82,7 @@ body{
 
 .main__form--flex-column{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .main__form__input{
@@ -100,12 +100,16 @@ body{
     transition: 0.1s;
 }
 
-.main__form__input:invalid{
+.main__form__input:focus{
+    border: 2px solid #5AAF65;
+}
+
+.main__form__input:focus:invalid{
     border: 2px solid #FF3333;
 }
 
-.main__form__input:focus{
-    border: 2px solid #5AAF65;
+.main__form__input:focus:invalid + .main__form__label::before{
+    content: "Invalid Email";
 }
 
 .main__form__submit{
