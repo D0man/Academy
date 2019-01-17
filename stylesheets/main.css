@@ -104,7 +104,7 @@ body{
     border: 2px solid #5AAF65;
 }
 
-.main__form__input--error{
+.main__form__input:valid{
     border: 2px solid #FF3333;
 }
 

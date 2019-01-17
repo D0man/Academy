@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(isset($_SESSION['error'])){
-        $invalidEmail = ['errorMessage' => 'Invalid Email', 'errorClass' => 'main__form__input--error', 'typedEmail' => $_SESSION['mail']];
+        $invalidEmail = ['errorMessage' => 'Invalid Email', 'typedEmail' => $_SESSION['mail']];
     }
     session_destroy();
 ?>
@@ -34,7 +34,7 @@
                             <div class="main__form--flex-column">
                                 <label for="mail"><?php if(isset($invalidEmail)) echo $invalidEmail['errorMessage'] ?></label>
                                 <input
-                                class="main__form__input <?php if(isset($invalidEmail)) echo $invalidEmail['errorClass']; ?>"
+                                class="main__form__input"
                                 value="<?php if(isset($invalidEmail)) echo $invalidEmail['typedEmail']; ?>"
                                 type="email"
                                 name="mail"
