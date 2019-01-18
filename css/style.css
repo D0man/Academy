@@ -199,7 +199,15 @@ label {
     display: none;
 }
 
-input:focus+label {
+label:before {
+    content: '';
+}
+
+input:focus:invalid+label:before {
+    content: 'Invalid ';
+}
+
+input:focus:valid+label {
     display: block;
     position: absolute;
     left: 11.88%;
@@ -211,10 +219,31 @@ input:focus+label {
 }
 
 @media (min-width: 768px) {
-    input:focus+label {
+    input:focus:valid+label {
         position: absolute;
         left: 15.80%;
         right: 51.82%;
+    }
+}
+
+input:focus:invalid+label {
+    display: block;
+    position: absolute;
+    left: 11.88%;
+    right: 10.94%;
+    top: 21.37%;
+    bottom: 66.46%;
+    line-height: normal;
+    font-size: 16px;
+    color: #FF3333;
+}
+
+@media (min-width: 768px) {
+    input:focus:invalid+label {
+        position: absolute;
+        left: 15.80%;
+        right: 51.82%;
+        color: #FF3333;
     }
 }
 
