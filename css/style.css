@@ -264,7 +264,6 @@ button {
     border-radius: 9px;
     font-family: Lato;
     color: #FFFFFF;
-    /* transition: .2s; */
 }
 
 @media (min-width: 768px) {
@@ -274,7 +273,6 @@ button {
         right: 15.62%;
         top: 33.48%;
         bottom: 42.17%;
-        /* transition: .2s; */
     }
 }
 
@@ -305,6 +303,17 @@ footer {
     top: 418px;
 }
 
+@media (min-width: 768px) {
+    footer {
+        position: absolute;
+        width: 768px;
+        height: 150px;
+        left: 0.52%;
+        right: -0.52%;
+        top: 84.96%;
+    }
+}
+
 footer p {
     line-height: 20px;
     font-size: 16px;
@@ -318,20 +327,11 @@ footer p {
     footer p {
         line-height: 28px;
         font-size: 24px;
+        top: 33.33%;
+        bottom: 8%;
     }
 }
 
-@media (min-width: 768px) {
-    footer {
-        position: absolute;
-        width: 768px;
-        height: 150px;
-        left: 0.52%;
-        right: -0.52%;
-        top: 84.96%;
-        bottom: 0.39%;
-    }
-}
 
 footer p:nth-child(1) {
     position: absolute;
@@ -377,5 +377,17 @@ footer p:nth-child(3) {
         position: absolute;
         top: 73.33%;
         bottom: 8%;
+    }
+}
+
+footer p img {
+    height: 15px;
+    width: 16px;
+}
+
+@media (min-width: 768px) {
+    footer p img {
+        height: 20px;
+        width: 24px;
     }
 }
