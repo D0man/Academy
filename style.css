@@ -19,6 +19,7 @@ body {
 }
 .header__img {
     width: 89.38%;
+    max-width: 858px;
     filter: drop-shadow(0px 0px 0px rgba(46, 54, 51, 0.1));
 }
 .header__caption {
