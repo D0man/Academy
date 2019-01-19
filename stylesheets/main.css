@@ -37,7 +37,7 @@ body{
     flex-direction: column;
 }
 
-.logo__title{
+.page__title{
     font-weight: 100;
     font-size: 60px;
     letter-spacing: 5px;
