@@ -63,6 +63,7 @@ body{
     color: #FF3333;
     text-align: left;
     height: 1.1em;
+    visibility: hidden;
 }
 
 .form--email{
@@ -93,8 +94,8 @@ body{
     border: 2px solid #FF3333;
 }
 
-.form__input:focus:invalid + .form__label::before{
-    content: "Invalid Email";
+.form__input:focus:invalid + .form__label{
+    visibility: visible;
 }
 
 .form__submit{
