@@ -8,14 +8,13 @@ input.addEventListener('keyup', () => {
   }
 });
 
-
 const config = {
-  apiKey: 'AIzaSyAYWMXR8w8m16F7pVp_RZsnsBg1JkjYkVY',
-  authDomain: 'academy-c7303.firebaseapp.com',
-  databaseURL: 'https://academy-c7303.firebaseio.com',
-  projectId: 'academy-c7303',
-  storageBucket: 'academy-c7303.appspot.com',
-  messagingSenderId: '587195173569',
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  databaseURL: process.env.DATABASE_URL,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
 };
 
 firebase.initializeApp(config);
@@ -23,7 +22,7 @@ firebase.initializeApp(config);
 const database = firebase.database();
 const ref = database.ref('emails');
 
-const submitButton = document.querySelector('.form__button');
+const submitButton = document.querySelector('#LandingEmail');
 
 submitButton.addEventListener('click', (e) => {
   e.preventDefault();
