@@ -14,8 +14,20 @@ body {
   justify-content: space-between;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .header__logo {
   width: 100%;
+}
+
+@media(min-width: 768px) {
+  .header__logo {
+    width: 80%;
+  }
 }
 
 .header__title {
