@@ -67,7 +67,7 @@ body{
     visibility: hidden;
 }
 
-.form--email{
+.form__column{
     display: flex;
     flex-direction: column-reverse;
 }
