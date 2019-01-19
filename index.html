@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Code Academy</title>
+</head>
+<body>
+  
+  <header class="header">
+    <img src="./assets/coming-soon-ribbon.png" alt="Coming Soon!" class="header__ribbon">
+    <img src="./assets/undraw_developer_activity_bv83.svg" alt="Code Academy" class="header__logo">
+    <h1 class="header__title">Code Academy</h1>
+  </header>
+
+  <main class="main">
+    <form class="form">
+      <h2 class="form__title">Leave your email</h2>
+      <div class="form__container">
+        <div class="form__group">
+          <input name="email" type="email" class="form__input" title="email@domain.pl email@domain.com" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+          <label for="email" class="form__label">
+            <span class="form__label-content">E-mail</span>
+          </label>
+        </div>
+        <button id="#LandingEmail" class="form__button">Get early access</button>
+      </div>
+    </form>
+  </main>
+
+
+  <footer class="footer">
+    <p class="footer__content">User &copy; 2019.</p>
+    <p class="footer__content">
+      Made with 
+      <img src="./assets/love.png" alt="" class="footer__content-img"> 
+      in Poland
+    </p>
+    <p class="footer__content">We're using cookies to improve your experience.</p>
+  </footer>
+
+<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
