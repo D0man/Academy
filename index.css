@@ -8,7 +8,7 @@ body {
 .container {
     text-align: center;
     background-image: linear-gradient(lightgreen 15%, green);
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 .svg-section {
