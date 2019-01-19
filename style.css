@@ -6,4 +6,19 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  background: linear-gradient(180deg, #83EB94 0%, #47D95E 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.header__logo {
+  width: 100%;
+}
+
+.header__title {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 4px;
 }
