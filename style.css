@@ -8,10 +8,9 @@ body {
   font-family: 'Lato', sans-serif;
   background: linear-gradient(180deg, #83EB94 0%, #47D95E 100%);
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .header {
@@ -35,6 +34,12 @@ body {
   }
 }
 
+@media(min-width: 1920px) {
+  .header__ribbon {
+    width: 5%;
+  }
+}
+
 .header__logo {
   width: 100%;
 }
@@ -45,12 +50,40 @@ body {
   }
 }
 
+@media(min-width: 1024px) {
+  .header__logo {
+    width: 35%;
+  }
+}
+
+@media(min-width: 1920px) {
+  .header__logo {
+    width: 40%;
+  }
+}
+
 .header__title {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
   font-weight: 300;
   letter-spacing: 4px;
+}
+
+@media(min-width: 1024px) {
+  .header__title {
+    font-size: 3.5rem;
+  }
+}
+
+.main {
+  margin-top: 2rem;
+}
+
+@media(min-height: 700px) {
+  .main {
+    margin-top: 5rem;
+  }
 }
 
 .form {
@@ -67,6 +100,12 @@ body {
   font-size: 1.1rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
+}
+
+@media(min-width: 768px) {
+  .form__title {
+    font-size: 2rem;
+  }
 }
 
 @media(min-width: 768px) {
@@ -164,6 +203,7 @@ body {
   width: 100%;
   margin-top: 1rem;
   transition: box-shadow .5s ease;
+  cursor: pointer;
 }
 
 .form__button:hover {
@@ -185,4 +225,5 @@ body {
   text-align: center;
   color: #fff;
   margin-bottom: 1rem;
+  margin-top: auto;
 }
