@@ -4,7 +4,7 @@
         display: none;
     }
 
-    .header__title{
+    .logo__title{
         font-size: 30px;
     }
 
@@ -26,7 +26,7 @@
 }
 
 @media all and (max-height: 500px){
-    .header__logo{
+    .logo{
         display: none;
     }
 }
