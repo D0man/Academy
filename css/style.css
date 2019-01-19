@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background: linear-gradient(90deg, #83EB94 0%, #47D95E 100%);
     text-align: center;
@@ -12,7 +11,6 @@ body {
     font-size: 24px;
     font-weight: 100;
 }
-
 .header-image {
     width: 100%;
 }
@@ -25,7 +23,6 @@ body {
 .coming-soon-ribbon {
     display: none;
 }
-
 .main-section .form-title {
     display: block;
     margin-top: 10px;
@@ -36,17 +33,13 @@ body {
 label[for="email"] {
     display: none;
 }
-form {
+.newsletter-form {
     margin: 0 auto;
     display: inline-block;
     position: relative;
 }
-
-input {
-    display: block;
-}
-
 .email-input {
+    display: block;
     width: 250px;
     height: 48px;
     border-radius: 9px;
@@ -89,6 +82,7 @@ input.email-input:focus {
     border: 2px solid #5AAF65;
 }
 .submit-button {
+    display: block;
     background: #0297EC;
     border-radius: 9px;
     border: none;
@@ -101,31 +95,26 @@ input.email-input:focus {
     cursor: pointer;
     margin-top: 10px;
 }
-
 .submit-button:hover {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
-
-footer {
+.footer {
     margin-top: 92px;
     margin-bottom: 10px;
     font-size: 16px;
 }
-
 .heart-icon {
     margin-right: 5px;
 }
 
 @media only screen and (min-width: 768px) {
-    header {
+    .header {
         position: relative;
         margin-bottom: 50px;
     }
-
     .header-image {
         width: 50%;
     }
-
     .header-heading {
         font-size: 60px;
     }
@@ -133,25 +122,21 @@ footer {
         margin-top: 20px;
         margin-bottom: 50px;
     }
-
-    input {
-        display: inline;
-    }
-
     .email-input {
         margin-right: 36px;
+        display: inline;
     }
-
+    .submit-button {
+        display: inline;
+    }
     .coming-soon-ribbon {
         display: block;
         position: absolute;
         right: 0;
         top: 0;
     }
-
-    footer {
+    .footer {
         margin-top: 100px;
         margin-bottom: 10px;
     }
-
 }
