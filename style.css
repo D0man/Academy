@@ -9,6 +9,9 @@ body {
   background: linear-gradient(180deg, #83EB94 0%, #47D95E 100%);
   background-repeat: no-repeat;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header__logo {
@@ -100,4 +103,14 @@ body {
 
 .form__button:hover {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem;
 }
