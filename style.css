@@ -39,7 +39,7 @@ body {
   color: #fff;
   font-size: 1.1rem;
   font-weight: 400;
-  margin: 1.75rem 0;
+  margin-bottom: 1.5rem;
 }
 
 .form__group {
@@ -76,6 +76,11 @@ body {
 }
 
 .form__input:focus + .form__label {
+  top: -12px;
+  color: #fff;
+}
+
+.form__input--filled + .form__label {
   top: -12px;
   color: #fff;
 }
