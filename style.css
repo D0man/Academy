@@ -93,6 +93,19 @@ body {
   top: 0;
 }
 
+.form__input:invalid + .form__label {
+  color: red;
+}
+
+.form__input:invalid + .form__label:before {
+  content: 'Invalid';
+  color: red;
+}
+
+.form__input:invalid + .form__label:after {
+  color: red;
+}
+
 .form__button {
   background: #0297EC;
   color: #fff;
