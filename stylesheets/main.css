@@ -41,6 +41,7 @@ body{
     font-weight: 100;
     font-size: 60px;
     letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
 .header__logo__inner{
