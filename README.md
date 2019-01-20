@@ -29,3 +29,14 @@ Wstępny czas na wykonanie challenga 21.01.2019
 
 
 Jak ktoś ma ochotę zrobić lepszy readme, to niech to zrobi :D
+
+### Struktura
+Podzieliłem projekt na:
+* backend
+* frontend
+* server
+
+Dlaczego? Poniewaz, kazda z tych czesci projektu mozna reuzyc. Przykladowo warstwa frontendu. To jest tylko jedna strona z jakims formularzem i wyslaniem danych tego formularza w jakies miejsce.
+Dlatego doszedl <b>serwer</b>, ktory obsluguje dane przychodzace z tego formularza i gdzies je zapisuje.
+Dodatkowo jest <b>backend</b>, ktory ma byc panelem admina. On rowniez nie musi byc na tej samej domenie co frontend i serwer. Rownie dobrze nigdzie nie musi byc serwowany, bo admin moze miec to narzedzie po prostu lokalnie.
+
