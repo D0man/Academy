@@ -6,7 +6,7 @@ const handleSubmit = () => {
   const formData = new FormData(form);
   const xhr = new XMLHttpRequest();
 
-  xhr.open("post", `${process.env.API_URL}/subscription/add`, true);
+  xhr.open("post", `${process.env.API_URL}/addEmail`, true);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.send(
     JSON.stringify({
