@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     color: whitesmoke;
-    font-family: Lato, 'Courier New', Courier, monospace;
+    font-family: 'Lato', 'Courier New', Courier, monospace;
     min-height: 100%;
 }
 
@@ -37,11 +37,10 @@ h3 {
     height: 10vh;
     width: 300px;
     border-radius: 5px;
-    font-family: Lato;
+    font-family: 'Lato';
 }
 
 .form {
-    overflow: hidden;
     box-sizing: border-box;
 }
 
@@ -50,6 +49,7 @@ h3 {
 }
 
 .submit {
+    text-transform: uppercase;
     margin: 10px;
     height: 12vh;
     font-size: 1.2rem;
