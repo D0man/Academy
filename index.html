@@ -14,20 +14,23 @@
 
     <div class="flex-container">
         <header class="logo">
+
             <img class="logo__img-corner" src="assets/coming-soon-ribbon.png" alt="">
             <img class="logo__img" src="assets/undraw_developer_activity_bv83.svg" alt="Logo Code Academy">
             <h1 class="logo__title">code academy</h1>
         </header>
         <section class="forms">
             <form action="" method="post" class="form">
-                <label for="email" class="form__label">leave your email</label>
+                <label for="email" class="form__label" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*{2,8}$/"
+                    required>leave
+                    your email</label>
                 <input type="email" name="email" class="form__input form__input-email" placeholder="E-mail">
                 <button type="submit" class="form__btn">get early access</button>
             </form>
         </section>
         <footer class="footer">
             <p class="footer__desc">user &copy; 2019.</p>
-            <p class="footer__desc">made with <img src="/assets/love.png" alt="little heart in footer">
+            <p class="footer__desc">made with <img class="footer__img-love" src="/assets/love.png" alt="little heart in footer">
                 in Poland</p>
             <p class="footer__desc">we're using cookies to improve your experience.</p>
         </footer>
