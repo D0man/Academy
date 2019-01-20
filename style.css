@@ -1,0 +1,164 @@
+/* font-family: 'Lato', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    height: 100vh;
+    color: white;
+    background-image:
+        linear-gradient(to bottom,
+        rgb(120, 196, 120), rgb(83, 202, 83) 90%);
+    text-align: center;
+}
+
+
+.flex-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*****   HEADER  ****/
+
+.logo__img {
+    max-width: 100%;
+}
+
+.logo__img-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.logo__title {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 6px;
+    font-size: 3.2rem;
+}
+
+/*****  SECTION - FORM  ****/
+
+.forms {}
+
+.form {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label {
+    padding: 30px;
+    font-size: 1.8rem;
+}
+
+.form__label::first-letter {
+    text-transform: uppercase;
+}
+
+
+.form__input,
+.form__btn {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 1.8rem;
+}
+
+
+.form__btn {
+    background-color: royalblue;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.form__btn:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+}
+
+.form__input:focus {
+    border: 3px solid royalblue;
+    outline: none;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, .3)
+}
+
+
+/****  FOOTER  ****/
+
+.footer {
+    margin-top: auto;
+    padding: 20px;
+}
+
+.footer__desc,
+.big-letter,
+.footer__desc img {
+    font-size: 1.8rem;
+    line-height: 2.2rem
+}
+
+
+
+.footer__desc::first-letter {
+    text-transform: uppercase;
+}
+
+@media (min-width: 800px) {
+
+    /****  HEADER  ****/
+    .logo__img {
+        width: 50%;
+    }
+
+    .logo__img-corner {
+        display: block;
+    }
+
+    .logo__title {
+        font-size: 5rem;
+    }
+
+    /****  FORM  ****/
+    .form {
+        width: 60%;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+
+    .form__label {
+        font-size: 2.2rem;
+        flex-basis: 100%;
+    }
+
+    .form__input,
+    .form__btn {
+        font-size: 1.6rem;
+        flex-basis: 45%;
+    }
+
+    .footer__desc {
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+    }
+
+    .footer__desc img {
+        width: 2.2rem;
+    }
+
+}
