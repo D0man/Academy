@@ -1,5 +1,7 @@
 # Subscribers - backend
 
-It's a "protected" admin site of frontend. I put it in new directory, because I want fully split a work.
+Strona panelu administratora.
 
-### Used stack
+### Uzyte narzedzia
+* [VueJs](https://github.com/vuejs/vue) - w sumie moglby byc VanillaJs - ale to zadanie bylo potraktowane jako dodatkowe, wiec tak bylo szybciej.
+* [axios](https://github.com/axios/axios) - paczka do requestow HTTP
