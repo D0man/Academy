@@ -5,7 +5,8 @@
   "author": "hello@mateuszlittwin.pl",
   "license": "MIT",
   "scripts": {
-    "parcel:dev": "parcel -p 1235 index.html"
+    "parcel:dev": "parcel -p 1235 index.html",
+    "parcel:prod": "parcel build index.html --out-dir dist"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@vue/component-compiler-utils": "^2.5.0",
+    "cssnano": "^4.1.8",
     "vue-template-compiler": "^2.5.22"
   }
 }

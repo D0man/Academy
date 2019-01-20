@@ -32,7 +32,7 @@ export default {
   mounted() {
     this.isLoading = true;
     axios
-      .get(`${process.env.API_URL}/subscriptions`)
+      .get(`${process.env.API_URL}/getEmails`)
       .then(response => {
         this.emails = response.data.emails;
         this.isLoading = false;
