@@ -1,0 +1,17 @@
+{
+  "name": "01_subscribe_list_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "hello@mateuszlittwin.pl",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3"
+  }
+}
