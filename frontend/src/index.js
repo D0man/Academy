@@ -8,6 +8,7 @@ const handleSubmit = () => {
 
   xhr.addEventListener('load', () => {
     form.outerHTML = "<h2>Thank you for subscription.</h2> <br> You will be redirected in few seconds..";
+
     setTimeout(() => {
       window.location.href = '/';
     }, 4000);
