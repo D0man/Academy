@@ -1,0 +1,155 @@
+/* Core styles */
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(to bottom, #83EB94, #47D95E);
+    color: white;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1em;
+    margin: 7em 5px 10px 5px;
+    font-weight: 200;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+/* Header */
+
+figcaption {
+    text-transform: uppercase;
+    font-size: 300;
+    letter-spacing: 5px;
+    font-size: 1.55em;
+    line-height: 36px;
+
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+/* Section A */
+
+input,
+.btn-primary {
+    box-sizing: border-box;
+    border: 1px solid rgb(180, 175, 175);
+    border-radius: 9px;
+    offset: 0px, 4px;
+    padding: 5px 10px;
+    margin: 5px;
+    width: 250px;
+    height: 48px;
+}
+
+#btn {
+    background-color: #0297EC;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 900;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    transition: all .2s;
+}
+
+#btn:hover {
+    transform: transleteY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .4);
+}
+
+#btn:active {
+    transform: transleteY(-1px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .4);
+}
+
+/* Input  */
+
+
+.my_input {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, .4);
+}
+
+label {
+    margin: 20px 0;
+    position: relative;
+    display: inline-block;
+}
+
+span {
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity: 0.5;
+}
+
+
+
+input:focus+span,
+input:not(:placeholder-shown)+span {
+    opacity: 1;
+    transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+
+/* For IE Browsers*/
+input:focus+span,
+input:not(:-ms-input-placeholder)+span {
+    opacity: 1;
+    transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+
+.picture {
+    position: relative;
+}
+
+#img_soon {
+    display: inline-block;
+    width: 124px;
+    height: 189px;
+    position: absolute;
+    right: 0%;
+    top: 0.1%;
+    bottom: 81.45%;
+    opacity: 0;
+}
+
+/* Footer */
+
+.main-footer {
+    font-size: .5em;
+    margin: 50px 20px 0 20px;
+    padding: 30px;
+}
+
+/* Media */
+@media (min-width: 768px) {
+
+    #img_soon {
+        width: 124px;
+        height: 189px;
+        position: absolute;
+        right: 0%;
+        top: 0.1%;
+        bottom: 81.45%;
+        opacity: 1;
+    }
+}
