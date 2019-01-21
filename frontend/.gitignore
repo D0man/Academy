@@ -1,0 +1,7 @@
+.history
+node_modules/
+assets/
+.firebase/
+
+dist/**.js
+dist/**.map

@@ -1,0 +1,19 @@
+{
+  "name": "01_subscribe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mzastue/Academy.git",
+  "author": "hello@mateuszlittwin.pl",
+  "license": "MIT",
+  "scripts": {
+    "parcel:dev": "parcel index.html",
+    "parcel:prod": "parcel build index.html --no-minify --out-dir dist"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0"
+  },
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "sass": "^1.16.0"
+  }
+}
