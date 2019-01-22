@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-mobile.css">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <img class="header__img" src="img/header.svg" alt="">
+    <h1 class="header__title" >Code Academy</h1>
+  </header>
+  <main>
+    <form id="contact__submit--send" action="" class="contact">
+      <label for="" class="contact__title">Leave your email</label>
+      <div class="contact__input-container">
+        <input type="email" placeholder="E-mail" required class="contact__input"
+        pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+        >
+        <p class="contact__input-warning contact__input-warning--info">E-mail</p>
+        <p class="contact__input-warning contact__input-warning--error">Invalid E-mail</p>
+      </div>
+      <input type="submit" class="contact__submit" value="Get early access">
+    </form>
+  </main>
+  <footer class="footer">
+    <p class="footer__info">airm &copy; 2019.</p>
+    <p class="footer__info">Made with <img src="img/love.png" alt="" class="footer__img"> in Poland</p>
+    <p class="footer__info">We're using cookies to improve your experience.</p>
+  </footer>
+  <aside class="coming-soon">
+    <img src="img/coming-soon-ribbon.png" alt="" class="coming-soon__img">
+  </aside>
+  <aside class="addressbook">
+    <div class="addressbook__modal">
+      <div class="addressbook__list-container">
+        <h2 class="addressbook__title">E-mails added:</h2>
+        <ul class="addressbook__list"></ul>
+      </div>
+      <input id="contact__submit--close" type="submit" class="contact__submit" value="ok">
+    </div>
+  </aside>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
