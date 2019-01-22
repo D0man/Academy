@@ -1,0 +1,41 @@
+@media (max-width: 600px){
+  .header__title{
+    font-size: 4rem;
+    line-height: 8rem;
+  }
+
+  .coming-soon{
+    display: none;
+  }
+}
+
+@media (max-width: 480px){
+  body{
+    background: linear-gradient(180deg, #83EB94 0%, #47D95E 100%) fixed;
+  }
+
+  .header__title{
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+
+  .contact__title{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .footer__info{
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-height: 600px){
+  .addressbook__modal{
+    height: 80%;
+    min-height: auto
+  }
+}
