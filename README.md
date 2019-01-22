@@ -1,6 +1,4 @@
-## Challenge #1 - Landing Page
-
-demo - http://vizman.ayz.pl/01-Landing-Page/
+demo of my version - http://vizman.ayz.pl/01-Landing-Page/
 
 ﻿# Academy
 Projekty wykonywane przez społeczność discorda
