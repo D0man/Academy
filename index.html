@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <title>Challenge #1 - Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#47D95E">
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <img class="header__img" src="assets/undraw_developer_activity_bv83.svg" alt="An illustration of a developer sitting at a desk with a computer">
+            <img class="header__img" src="assets/undraw_developer_activity_bv83.svg" alt="Developer sitting at a desk with a computer">
             <h1 class="header__caption">Code Academy</h1>
             <img class="header__ribbon" src="assets/coming-soon-ribbon.png" alt="Coming soon ribbon">
         </header>
-        <form action="" method="get" class="emailForm">
-            <label for="emailForm__input" class="emailForm__title">Leave your email</label>
-            <input type="email" name="emailForm__input" id="emailForm__input" class="emailForm__input" placeholder="E-mail" required>
+        <form action="" method="get" class="email-form">
+            <label for="email-form__input" class="email-form__title">Leave your email</label>
+            <input type="email" name="email" id="email-form__input" class="email-form__input" placeholder="E-mail" required>
             <div id="errorbar">Invalid E-mail</div>
             <div id="focusbar">E-mail:</div>
-            <button type="submit" id="LandingEmail" class="emailForm__button"><span class="emailForm__button__text">Get early access</span></button>
+            <button type="submit" id="LandingEmail" class="email-form__button">Get early access</button>
         </form>
         <footer class="footer">
             <p class="footer__line">Ksoai &copy; 2019 </p>
-            <p class="footer__line">Made with <span class="footer__line__heart">&hearts;</span> in Poland </p>
+            <p class="footer__line">Made with <img alt="Blue heart icon" src="assets/love.png" class="footer__img-heart"> in Poland </p>
             <p class="footer__line">We're using cookies to improve your experience.</p>
         </footer>
     </div>
