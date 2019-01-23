@@ -1,0 +1,32 @@
+@media all and (max-width: 500px){
+
+    .coming-soon{
+        display: none;
+    }
+
+    .page__title{
+        font-size: 30px;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form__input{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer{
+        font-size: 16px;
+    }
+}
+
+@media all and (max-height: 500px){
+    .logo{
+        display: none;
+    }
+}
