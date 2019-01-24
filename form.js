@@ -1,17 +1,18 @@
-var express = require("express"); 
-var app = express();
-var port = 3000;
-var bodyParser = require('body-parser');
+const express = require("express"); 
+const app = express();
+const mongoose = require("mongoose");
+const port = 3000;
+const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-var mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27017/academy", { useNewUrlParser: true });
-var nameSchema = new mongoose.Schema({
+mongoose.connect("mongodb://localhost:27017/academy", 
+{ useNewUrlParser: true });
+const nameSchema = new mongoose.Schema({
     email: String
    });
-var Email = mongoose.model("Email", nameSchema);
+const Email = mongoose.model("Email", nameSchema);
 
 app.use(express.static(__dirname + '/'));
 
@@ -20,7 +21,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/saveemail", (req, res) => {
-    var myData = new Email(req.body);
+    const myData = new Email(req.body);
     myData.save()
     .then(item => {
     res.send("Email saved in database");
