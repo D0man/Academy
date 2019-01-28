@@ -54,7 +54,7 @@ Wstępny czas na wykonanie challenga 10.02.2019
  ### Porada
  BEM jest koncepcją nazwienictwa, ale nie tylko klass cssowych. Polega on na tym ze dzielimi klasy na bloki, elementy i modyfikatory.
  Bloki są samodzielnymi elementami strony, oznacza to, że jeżeli możemy coś wyjąć i włożyć w dowolne miejsce na stronie, będzie wyglądać tak samo jak wcześniej. Elementy są elemntami bloku, które jednak nieco różnią się stylem od głownego bloku, nie powinno się ich wyjmować z bloku. Modyfikatory służa tylko do drobnych zmian wizualnych można stosować zarówno do elementów jak i bloków.
- Dobra analogią może być np. prosta budowa człowieka. Blokiem w takim przypadku będzie ręka, elementem, łokieć a modyfikatorem lewa, palce natomiast beda juz oddzielnym elementem bo moga sie pojawic zarowno u rak jak i u nog - maja wlasne elementy np paznokncie imoga miec swoje modyfikatory np.brudne.
- .reka-> -> reka__lokiec -> reka__lokiec--lewy
- .palec -> palec__paznokiec --> palec__paznokiec--brudny 
+ Dobra analogią może być np. prosta budowa człowieka. Blokiem w takim przypadku będzie ręka, elementem, łokieć a modyfikatorem lewa, palce natomiast beda juz oddzielnym elementem bo moga sie pojawic zarowno u rak jak i u nog - maja wlasne elementy np paznokncie imoga miec swoje modyfikatory np.brudne.  
+ .reka-> -> reka__lokiec -> reka__lokiec--lewy  
+ .palec -> palec__paznokiec --> palec__paznokiec--brudny  
   
