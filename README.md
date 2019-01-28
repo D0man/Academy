@@ -24,8 +24,37 @@ Zwrocie uwagę na sematyke html i accessibility.
 * Wykonaj zadanie bez użycia javascriptu
 * Stwórz warstwe backendowa(dowolny język) lub podepnij się do firebase
 ### Termin 
-Wstępny czas na wykonanie challenga 21.01.2019  
-  
-  
+Wstępny czas na wykonanie challenga 10.02.2019
+Przedłużam challeng dla wszystkich chętnych, Code Review będzie się pojawiał do tego terminu i w tym terminie wybierzemy zwycięsce jeżeli ktoś jeszcze nie zrobił 
 
-Jak ktoś ma ochotę zrobić lepszy readme, to niech to zrobi :D
+## Challenge #2 - Header + Home Page
+Zadanie typowo frontendowe, zostało podzielone na 3 mini zadania i jednego bonusowego, tym razem widok tylko w jednej wersji mobilnej aby utrwalić podejście mobile first, a nie dlatego, że mi się nie chciało robić...  
+ Jako że większośc z was próbowała stosować BEM w swoim CSSie jest to dziś oficjalna metodologia naszych challengy.
+Zadania:  
+* Przygotuj Header strony  
+ Zawiera logo i przycisk menu, przycisk ma zmieniac swoj wyglad gdy menu jest aktywne.  
+ Menu ma zawierać linki które na razie prowadzą do #.  
+ Zarówno przycisk jak i menu mają być animowane  
+ Zadanie można wykonać zarówno z pomocą javascriptu jak i przy pomocy tzw. checkbox hack.
+ Staraj się w jak najlepszy sposób odwzorować grafikę, nawet jak wydaje sie brzydka
+ * Przygotuj sekcje strony zgodnie z załączoną grafiką.
+ Sekcja ma zawierać 3 checkboxy w których można zaznaczać postępy zadań.
+ * Javascript
+ Pierwsze zadania do którego wykonania niezbędne jest wykorzystania Javascriptu.  
+ Do sekcji z poprzedniego zadania należy podpiąc skrypt, który będzie pokazywał czas do ukończenia zadania(10.02.2019 23:59:59)
+ Czas ma odmierzać dni jeżeli do końca zadania zostało więcej niż 48 godzin.
+ Jeżeli zostało mniej niż 48 godzin, sekcja ma pokazywać czas w formacie gg:mm:ss, wyswietlany czas ma miec kolor czerwony i ma sie zmieniac na bieżąco.
+ * Bonus zadanie
+ Napisz kod przy użyciu sassa i nowoczesnego javascriptu, zapoznaj się z narzędziami typu webpack,parcel,gulp, npm script i zaimplementuj je w wykonaniu zadania.  
+ ### Grafiki
+Na razie tylko figma
+[Figma](https://www.figma.com/file/bgjopxy8ZV8tWyxm0koix0wg/Header?node-id=0%3A1)   
+ ### Termin 
+Wstępny czas na wykonanie challenga 10.02.2019
+ ### Porada
+ BEM jest koncepcją nazwienictwa, ale nie tylko klass cssowych. Polega on na tym ze dzielimi klasy na bloki, elementy i modyfikatory.
+ Bloki są samodzielnymi elementami strony, oznacza to, że jeżeli możemy coś wyjąć i włożyć w dowolne miejsce na stronie, będzie wyglądać tak samo jak wcześniej. Elementy są elemntami bloku, które jednak nieco różnią się stylem od głownego bloku, nie powinno się ich wyjmować z bloku. Modyfikatory służa tylko do drobnych zmian wizualnych można stosować zarówno do elementów jak i bloków.
+ Dobra analogią może być np. prosta budowa człowieka. Blokiem w takim przypadku będzie ręka, elementem, łokieć a modyfikatorem lewa, palce natomiast beda juz oddzielnym elementem bo moga sie pojawic zarowno u rak jak i u nog - maja wlasne elementy np paznokncie imoga miec swoje modyfikatory np.brudne.
+ .reka-> -> reka__lokiec -> reka__lokiec--lewy
+ .palec -> palec__paznokiec --> palec__paznokiec--brudny 
+  
