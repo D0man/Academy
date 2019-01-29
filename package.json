@@ -1,0 +1,24 @@
+{
+  "name": "academy-challenge",
+  "version": "1.0.0",
+  "description": "Academy challenge - landing page with email form",
+  "main": "form.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrykPorabik/Academy.git"
+  },
+  "author": "Patryk Porabik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatrykPorabik/Academy/issues"
+  },
+  "homepage": "https://github.com/PatrykPorabik/Academy#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.4"
+  }
+}
