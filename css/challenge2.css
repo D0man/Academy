@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700');
+
+.wrapper {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    background-color: #30C2FF;
+}
+
+.header {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-left: 10px;
+    flex-basis: 90px;
+    height: 40px;
+}
+
+.header__btn {
+    margin: 5px 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn__text {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 0 5px;
+}
+
+.fas {
+    display: none;
+}
+
+.btn__icon--show {
+    display: inline-block;
+    vertical-align: bottom;
+    animation: fas-spinning .5s linear both;
+    animation-play-state: paused;
+}
+
+@keyframes fas-spinning {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.header__nav {
+    position: fixed;
+    right: -180px;
+    top: 40px;
+    height: 220px;
+    width: 180px;
+    background: #FAFAFA;
+    transition: .5s;
+}
+
+.header__nav--active {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    height: 220px;
+    width: 180px;
+    background: #FAFAFA;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__item {
+    height: 30px;
+    border-top: 1px solid #30C2FF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.nav__item-big {
+    flex-grow: 1;
+    text-align: center;
+    border: none;
+}
+
+.nav__link {
+    display: block;
+    padding-left: 10px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #000;
+    line-height: 30px;
+}
+
+.nav__link-big {
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+.section {
+    height: 320px;
+    width: 100%;
+    text-align: center;
+}
+
+.section__h1 {
+    margin: 20px 0 40px 0;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    font-size: 24px;
+    color: #FAFAFA;
+}
