@@ -63,7 +63,7 @@
     position: fixed;
     right: -180px;
     top: 40px;
-    height: 220px;
+    /* height: 220px; */
     width: 180px;
     background: #FAFAFA;
     transition: .5s;
@@ -74,14 +74,13 @@
     position: absolute;
     right: 0;
     top: 40px;
-    height: 220px;
-    width: 180px;
     background: #FAFAFA;
 }
 
 .nav__list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     list-style: none;
     height: 100%;
     padding: 0;
@@ -98,7 +97,7 @@
 }
 
 .nav__item-big {
-    flex-grow: 1;
+    height: 50px;
     text-align: center;
     border: none;
 }
@@ -120,7 +119,7 @@
     font-weight: bold;
     font-size: 20px;
     text-transform: uppercase;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 .section {
