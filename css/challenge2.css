@@ -2,7 +2,6 @@
 
 .wrapper {
     display: flex;
-    height: 80vh;
     flex-direction: column;
     background-color: #30C2FF;
 }
@@ -63,7 +62,6 @@
     position: fixed;
     right: -180px;
     top: 40px;
-    /* height: 220px; */
     width: 180px;
     background: #FAFAFA;
     transition: .5s;
@@ -75,6 +73,7 @@
     right: 0;
     top: 40px;
     background: #FAFAFA;
+    z-index: 1;
 }
 
 .nav__list {
@@ -126,6 +125,7 @@
     height: 320px;
     width: 100%;
     text-align: center;
+    color: #FAFAFA;
 }
 
 .section__h1 {
@@ -135,5 +135,78 @@
     font-weight: 300;
     line-height: 26px;
     font-size: 24px;
+}
+
+.section__p--title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.section__form {
+    display: flex;
+    justify-content: center;
+}
+
+.form__label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+}
+
+.form__label--white {
     color: #FAFAFA;
+}
+
+.form__box {
+    flex-basis: 100px;
+    height: 115px;
+    background-color: #FAFAFA;
+    position: relative;
+    border: 1px solid #FAFAFA;
+    padding-top: 10px;
+}
+
+.form__box--blue {
+    background-color: #30C2FF;
+    color: #FAFAFA;
+}
+
+.section__input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    zoom: 3;
+}
+
+.section__p--bottom {
+    transform: translateX(-90px);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    font-size: 16px;
+    text-decoration-line: underline;
+
+    color: #FAFAFA;
+
+}
+
+.footer__p-days {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    font-size: 48px;
+    text-align: center;
+    margin: 15px;
+    color: #000000;
 }
