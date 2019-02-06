@@ -22,3 +22,52 @@ button{
   outline: none;
   cursor: pointer;
 }
+
+.burger{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  width: 1em;
+  height: 1em;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.burger__lines,
+.burger__lines::after,
+.burger__lines::before{
+  width: 100%;
+  height: .1em;
+  background-color: rgba(245, 245, 245, 1);
+  border-radius: .1em;
+  transition: .2s .15s;
+  opacity: 1;
+}
+
+.burger__lines::after,
+.burger__lines::before{
+  content: "";
+  position: absolute;
+}
+
+.burger__lines::after{
+  transform: translateX(0) translateY(.45em);
+}
+
+.burger__lines::before{
+  transform: translateX(0) translateY(-.45em);
+}
+
+.burger.open .burger__lines{
+  background-color: rgba(245, 245, 245, 0);
+  transform: translateX(-1em);
+}
+
+.burger.open .burger__lines::before{
+  transform: translateX(1em) translateY(0) rotate(-45deg);
+}
+
+.burger.open .burger__lines::after{
+  transform: translateX(1em) translateY(0) rotate(45deg);
+}
