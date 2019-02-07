@@ -13,6 +13,7 @@ body{
   font-family: roboto, sans-serif;
   background: #30C2FF;
   color: #FAFAFA;
+  overflow-x: hidden;
 }
 a{
   text-decoration: none;
@@ -29,6 +30,7 @@ button{
 /* Header */
 
 .header{
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,16 +75,16 @@ button{
   transform: translateX(0) translateY(-.45em);
 }
 
-.burger.open .burger__lines{
+.burger.burger--open .burger__lines{
   background-color: rgba(245, 245, 245, 0);
   transform: translateX(-1em);
 }
 
-.burger.open .burger__lines::before{
+.burger.burger--open .burger__lines::before{
   transform: translateX(1em) translateY(0) rotate(-45deg);
 }
 
-.burger.open .burger__lines::after{
+.burger.burger--open .burger__lines::after{
   transform: translateX(1em) translateY(0) rotate(45deg);
 }
 
@@ -103,6 +105,48 @@ button{
 
 .navbtn__text{
   padding-right: 1rem;
+}
+
+.nav{
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-width: 18rem;
+  background-color: #fafafa;
+  color: #000;
+  transform: translateX(100%);
+  transition: .5s;
+}
+
+.nav--open{
+  transform: translateX(0);
+}
+
+.nav__list{
+  list-style: none;
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+.nav__item{
+  display: block;
+  padding: 0 1rem;
+  color: inherit;
+  border-top: 1px solid #30C2FF;
+  transition: .2s
+}
+
+.nav__item--login{
+  border: none;
+  font-size: 2rem;
+  line-height: 5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav__item:hover{
+  background-color: rgba(48, 193, 255, 0.466);
 }
 
 /* Logo */
