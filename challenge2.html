@@ -2,68 +2,75 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Challenge 2</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="css/challenge2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Challenge 2</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/challenge2.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <img src="assets2/logo.jpg" alt="code academy" class="header__logo">
-            <div class="header__btn">
-                <p class="btn__text">menu <i class="fas fa-bars fa-fw btn__icon--show"></i><i class="fas fa-times fa-fw"></i></p>
-            </div>
-            <nav class="header__nav">
-                <ul class="nav__list">
-                    <li class="nav__item nav__item-big"><a href="#" class="nav__link nav__link-big">Zaloguj</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Wyzwania</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">O nas</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Uczestnicy</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Kontakt</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Dołącz</a></li>
-                </ul>
-            </nav>
-        </header>
+  <div class="wrapper">
 
-        <section class="section">
-            <h1 class="section__h1">
-                Podejmij wyzwanie
-            </h1>
-            <p class="section__p--title">Home Page #2</p>
+    <!-- header with logo and menu button -->
+    <header class="header">
+      <img src="assets2/logo.jpg" alt="code academy" class="header__logo">
+      <div class="header__btn">
+        <p class="btn__text">menu <i class="fas fa-bars fa-fw btn__icon--show"></i><i class="fas fa-times fa-fw"></i></p>
+      </div>
 
-            <form class="section__form">
+      <!-- Navigation menu -->
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item-big"><a href="#" class="nav__link nav__link-big">Zaloguj</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Wyzwania</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">O nas</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Uczestnicy</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Kontakt</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Dołącz</a></li>
+        </ul>
+      </nav>
+    </header>
 
-                <div class="form__box">
-                    <input type="checkbox" class="section__input input--left" id="input--left">
-                    <label for="input--left" class="form__label">Header</label>
-                </div>
+    <!-- checkbox's section -->
+    <section class="section">
+      <h1 class="section__h1">
+        Podejmij wyzwanie
+      </h1>
+      <p class="section__p--title">Home Page #2</p>
+
+      <form class="section__form">
+
+        <div class="form__box">
+          <input type="checkbox" class="section__input" id="input--left">
+          <label for="input--left" class="form__label">Header</label>
+        </div>
 
 
-                <div class="form__box form__box--blue">
-                    <input type="checkbox" class="section__input input--mid" id="input--mid">
-                    <label for="input--mid" class="form__label form__label--white">Section</label>
-                </div>
+        <div class="form__box form__box--blue">
+          <input type="checkbox" class="section__input section__input--white" id="input--mid">
+          <label for="input--mid" class="form__label form__label--white">Section</label>
+        </div>
 
 
-                <div class="form__box">
-                    <input type="checkbox" class="section__input input--right" id="input--right">
-                    <label for="input--right" class="form__label">JavaScript</label>
-                </div>
+        <div class="form__box">
+          <input type="checkbox" class="section__input" id="input--right">
+          <label for="input--right" class="form__label">JavaScript</label>
+        </div>
 
-            </form>
-            <p class="section__p--bottom">Do końca zostało:</p>
-        </section>
-        <p class="footer__p-days">14 dni</p>
-    </div>
+      </form>
 
-    <script src="scripts/script.js"></script>
+      <!-- counting script -->
+      <p class="section__p--bottom">Do końca zostało:</p>
+    </section>
+    <p class="footer__p-days">14 dni</p>
+  </div>
+
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
