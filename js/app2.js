@@ -1,5 +1,6 @@
 const burger = document.querySelector(".burger");
+const navbtn = document.querySelector(".navbtn");
 
-burger.addEventListener("click", ()=>{
+navbtn.addEventListener("click", ()=>{
   burger.classList.toggle("open");
 });
