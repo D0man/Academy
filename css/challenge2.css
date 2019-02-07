@@ -55,7 +55,7 @@
   }
 
   to {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
   }
 }
 
@@ -71,12 +71,7 @@
 }
 
 .header__nav--active {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 40px;
-  background: #FAFAFA;
-  z-index: 1;
+  transform: translateX(-180px);
 }
 
 .nav__list {
@@ -194,9 +189,8 @@
   content: "\f0c8";
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(2);
   color: #30C2FF;
-  zoom: 2.5;
 }
 
 .section__input--white+label::before {
