@@ -1,0 +1,337 @@
+html {
+    background: linear-gradient(180deg, #83EB94 0%, #47D95E 100%);
+    background-attachment: fixed;
+}
+
+body {
+    position: relative;
+    width: 320px;
+    height: 568px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    body {
+        position: relative;
+        width: 768px;
+        height: 1024px;
+    }
+}
+
+/* Header */
+
+header {
+    position: absolute;
+    width: 320px;
+    height: 50px;
+    top: 176px;
+    left: 0px;
+}
+
+@media (min-width: 768px) {
+    header {
+        position: absolute;
+        width: 768px;
+        height: 100px;
+        top: 34.96%;
+        bottom: 55.27%;
+    }
+}
+
+header h1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    mix-blend-mode: normal;
+}
+
+@media (min-width: 768px) {
+    header h1 {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        padding-top: 50px;
+        font-size: 60px;
+    }
+}
+
+header img {
+    position: absolute;
+    width: 286px;
+    left: 5.31%;
+    right: 5.31%;
+    top: -294%;
+    bottom: 86%;
+}
+
+@media (min-width: 768px) {
+    header img {
+        width: 686px;
+    }
+}
+
+.ribbon {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .ribbon {
+        position: fixed;
+        display: block;
+        right: 0%;
+        top: 0.1%;
+        width: 124px;
+        height: 198px;
+        background: url(/assets/coming-soon-ribbon.png);
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+}
+
+/* Form */
+
+form {
+    position: absolute;
+    width: 320px;
+    height: 197.12px;
+    left: 0px;
+    top: 229.88px;
+}
+
+@media (min-width: 768px) {
+    form {
+        position: absolute;
+        width: 768px;
+        left: 0%;
+        top: 55%;
+    }
+}
+
+legend {
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    width: 100%;
+    line-height: normal;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    legend {
+        top: 0%;
+        font-size: 24px;
+    }
+}
+
+input {
+    position: absolute;
+    left: 10.94%;
+    top: 32.97%;
+    width: 250px;
+    height: 48px;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 16px;
+    text-indent: 10px;
+    padding: 0;
+    color: #A0A0A0;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 9px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+    input {
+        left: 15.62%;
+        top: 33.48%;
+    }
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #5AAF65;
+    color: #070707;
+}
+
+label {
+    display: none;
+}
+
+label:before {
+    content: '';
+}
+
+input:focus:invalid+label:before {
+    content: 'Invalid ';
+}
+
+input:focus:valid+label {
+    display: block;
+    position: absolute;
+    left: 11.88%;
+    right: 10.94%;
+    top: 21.37%;
+    bottom: 66.46%;
+    line-height: normal;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    input:focus:valid+label {
+        position: absolute;
+        left: 15.80%;
+        right: 51.82%;
+    }
+}
+
+input:focus:invalid+label {
+    display: block;
+    position: absolute;
+    left: 11.88%;
+    right: 10.94%;
+    top: 21.37%;
+    bottom: 66.46%;
+    line-height: normal;
+    font-size: 16px;
+    color: #FF3333;
+}
+
+@media (min-width: 768px) {
+    input:focus:invalid+label {
+        position: absolute;
+        left: 15.80%;
+        right: 51.82%;
+        color: #FF3333;
+    }
+}
+
+button {
+    position: absolute;
+    left: 10.94%;
+    top: 65.95%;
+    width: 250px;
+    height: 48px;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #0297EC;
+    border: none;
+    border-radius: 9px;
+    font-family: Lato;
+    color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    button {
+        left: 51.82%;
+        top: 33.48%;
+    }
+}
+
+button:hover {
+    outline: none;
+    top: 63.41%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    button:hover {
+        outline: none;
+        top: 30.94%;
+    }
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    width: 320px;
+    height: 150px;
+    top: 418px;
+    left: 0px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    footer {
+        position: absolute;
+        width: 768px;
+        height: 150px;
+        left: 0%;
+        top: 84.96%;
+    }
+}
+
+footer p {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    line-height: 20px;
+    font-size: 16px;
+    text-indent: 10px;
+}
+
+@media (min-width: 768px) {
+    footer p {
+        line-height: 28px;
+        font-size: 24px;
+    }
+}
+
+footer p:nth-child(1) {
+    top: 32.33%;
+}
+
+@media (min-width: 768px) {
+    footer p:nth-child(1) {
+        top: 30.33%;
+    }
+}
+
+footer p:nth-child(2) {
+    top: 46.33%;
+}
+
+@media (min-width:768px) {
+    footer p:nth-child(2) {
+        top: 47.33%;
+    }
+}
+
+footer p:nth-child(3) {
+    top: 58.33%;
+}
+
+@media (min-width: 768px) {
+    footer p:nth-child(3) {
+        top: 63.33%;
+    }
+}
+
+footer p img {
+    height: 15px;
+    width: 16px;
+}
+
+@media (min-width: 768px) {
+    footer p img {
+        height: 20px;
+        width: 24px;
+    }
+}
