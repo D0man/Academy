@@ -116,6 +116,7 @@ button{
   color: #000;
   transform: translateX(100%);
   transition: .5s;
+  z-index: 9;
 }
 
 .nav--open{
@@ -183,8 +184,10 @@ button{
 
 .challange_skill{
   flex-grow: 1;
+  width: 33.333%;
   color: #000;
   background-color:#fafafa;
+  padding-bottom: 2.8rem;
 }
 
 .challange_skill--colorless{
@@ -196,9 +199,52 @@ button{
 
 .challange__label-name{
   margin-top: 1rem;
+  margin-bottom: .7rem;
   font-size: 1.6rem;
   line-height: 1.8rem;
   font-weight: normal;
+}
+
+.challange__label-container{
+  position: relative;
+  margin: 0 auto;
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.challange__label-checkbox{
+  position: relative;
+  width: 4.8rem;
+  height: 4.8rem;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.challange__label-redesigned-checkbox{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 4.8rem;
+  height: 4.8rem;
+  background-image: url("../assets2/checkbox-blue.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.challange_skill--colorless .challange__label-redesigned-checkbox{
+  background-image: url("../assets2/checkbox-white.svg");
+}
+
+.challange__label-checkbox:not(:checked) + .challange__label-redesigned-checkbox{
+  background-image: url("../assets2/checkbox-blue-unchecked.svg");
+}
+
+.challange_skill--colorless
+.challange__label-checkbox:not(:checked) + .challange__label-redesigned-checkbox{
+  background-image: url("../assets2/checkbox-white-unchecked.svg");
 }
 
 /* timer */
