@@ -33,6 +33,9 @@ Wstępny czas na wykonanie challenga 21.01.2019
 Jak ktoś ma ochotę zrobić lepszy readme, to niech to zrobi :D
 
 ## Challenge #2 - Header + Home Page
+
+demo of my version - http://vizman.ayz.pl/doman-challange-02/index2.html
+
 Zadanie typowo frontendowe, zostało podzielone na 3 mini zadania i jednego bonusowego, tym razem widok tylko w jednej wersji mobilnej aby utrwalić podejście mobile first, a nie dlatego, że mi się nie chciało robić...
 Jako że większośc z was próbowała stosować BEM w swoim CSSie jest to dziś oficjalna metodologia naszych challengy.
 Zadania:
